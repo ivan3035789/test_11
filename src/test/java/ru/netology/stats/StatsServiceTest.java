@@ -9,7 +9,7 @@ public class StatsServiceTest {
         salesAmount service = new salesAmount();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 180;
-        long actual = service.salesAmount(sales);
+        long actual = service.calculete(sales);
         assertEquals(expected, actual);
     }
 
@@ -18,7 +18,7 @@ public class StatsServiceTest {
         averageAmountPerMonth service = new averageAmountPerMonth();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 15;
-        long actual = service.averageAmountPerMonth(sales);
+        long actual = service.calculete(sales);
         assertEquals(expected, actual);
     }
 
@@ -27,7 +27,7 @@ public class StatsServiceTest {
         minSales service = new minSales();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 9;
-        long actual = service.minSales(sales);
+        long actual = service.calculete(sales);
         assertEquals(expected, actual);
 
     }
@@ -37,7 +37,7 @@ public class StatsServiceTest {
         maxSales service = new maxSales();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 8;
-        long actual = service.maxSales(sales);
+        long actual = service.calculete(sales);
         assertEquals(expected, actual);
     }
 
@@ -46,7 +46,7 @@ public class StatsServiceTest {
         numMonthsSalesBelowAverage service = new numMonthsSalesBelowAverage();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 7;
-        long actual = service.numberOfMonthOfSalesBelowAverage(sales);
+        long actual = service.calculete(sales);
         assertEquals(expected, actual);
 
     }
@@ -56,7 +56,7 @@ public class StatsServiceTest {
         numMonthsAboveAverageSales service = new numMonthsAboveAverageSales();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 5;
-        long actual = service.numberOfMonthsOfAboveAverageSales(sales);
+        long actual = service.calculete(sales);
         assertEquals(expected, actual);
 
     }

@@ -1,7 +1,7 @@
 package ru.netology.stats;
 
 public class maxSales {
-    public long maxSales(long[] sales) {
+    public long calculete(long[] sales) {
         int maxMonth = 0;
         int month = 0;
         int maxMonth2 = 0;

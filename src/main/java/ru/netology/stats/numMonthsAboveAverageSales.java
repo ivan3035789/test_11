@@ -1,7 +1,7 @@
 package ru.netology.stats;
 
 public class numMonthsAboveAverageSales {
-    public long numberOfMonthsOfAboveAverageSales(long[] sales) {
+    public long calculete(long[] sales) {
         long sum = 0;
         long average = 0;
         long numberOfSales = 0;

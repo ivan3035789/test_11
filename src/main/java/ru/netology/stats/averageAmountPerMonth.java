@@ -1,7 +1,7 @@
 package ru.netology.stats;
 
 public class averageAmountPerMonth {
-    public long averageAmountPerMonth(long[] sales) {
+    public long calculete(long[] sales) {
         long sum = 0;
         long average = 0;
         for (long sale : sales) {
